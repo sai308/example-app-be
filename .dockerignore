@@ -1,0 +1,38 @@
+# Node modules (local dependencies are not needed in the image, we'll install them during the build)
+node_modules
+
+# Log files (optional, but usually not needed in the image)
+*.log
+
+# Test or source directories that are not part of the production build
+tests
+test
+__tests__
+
+# Coverage reports from testing frameworks (if present)
+coverage
+
+# IDE/editor settings
+.vscode
+.idea
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Optional: Environment-specific files (e.g. development or staging configs)
+.env
+.env.local
+
+# Files related to npm or yarn lock files (you should use package-lock.json or yarn.lock)
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Dockerfile-related
+Dockerfile*
+.dockerignore
+
+# Other potential files you might not want to copy (you can adjust this as needed)
+*.md
+README.md
